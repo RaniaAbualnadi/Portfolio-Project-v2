@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Portfolio`, Rania, Abualnadi, FullStack"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, portfolio, Rania, Abualnadi, Orange"
+    />
+    <meta name="author" content="Rania Abualnadi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap styles and javascript -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <title>Portfolio</title>
+
+    <!-- Font referances -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style referances -->
+    <link rel="stylesheet" href="stylecontact.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <img src="imgs/logo.png" class="logo" />
+      <ul class="lists">
+        <li>
+          <label class="dark-mode-toggle" id="dark-mode-toggle">
+            <i class="darkmode-btn fas fa-adjust" id="btnToggleDark"></i>
+          </label>
+        </li>
+        <li><a href="index.html">Home </a></li>
+        <li><a href="index.html#skills">Skills </a></li>
+        <li><a href="index.html#services"> Services</a></li>
+        <li><a href="project.html"> Projects</a></li>
+        <li><a href="index.html#Testimonials"> Testimonials</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact me -->
+    <section class="section6" id="contactme">
+      <div class="contactme-container">
+        <div>
+          <h1 id="ContactMe">Contact Me</h1>
+        </div>
+        <div>
+          <div class="summary">
+            To contact me, please fill the following form
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-container">
+        <!-- action="/action_page.php" -->
+        <form onsubmit="return validate()">
+          <label for="fname">Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+          <label class="validation-msg" id="fnameValidation">
+            Please check inserted Name
+          </label>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" />
+          <label class="validation-msg" id="emailValidation">
+            Please check the inserted Email</label
+          >
+          <label for="phone">Phone number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Your phone number"
+          />
+          <label class="validation-msg" id="phoneValidation">
+            Please check inserted phone number
+          </label>
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+          <label class="validation-msg" id="subjectValidation">
+            Please check the subject
+          </label>
+          <input type="submit" value="Submit" />
+          <div id="hiddenmsg" hidden><p>Your message was sent</p></div>
+        </form>
+      </div>
+    </section>
+    <!-- end of contact me -->
+    <!-- Footer -->
+    <footer>
+      <class class="row1">
+        <div class="columnff">
+          <h2>Social Media</h2>
+          <div class="social-container">
+            <div>
+              <a
+                href="https://www.facebook.com/abunnad"
+                class="fa fa-facebook facebookee"
+                target="_blank"
+              ></a>
+            </div>
+            <div>
+              <a href="www.google.com" class="fa fa-google" target="_blank"></a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/rania-abualnadi/"
+                class="fa fa-linkedin"
+                target="_blank"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="columnff">
+          <h2>QUICK LINKS</h2>
+          <ul>
+            <li><a href="index.html#skills"> My Skills</a></li>
+            <li><a href="project.html"> Projects and Works</a></li>
+            <li><a href="index.html#services">Services</a></li>
+          </ul>
+        </div>
+        <div class="columnff">
+          <h2>Address</h2>
+          <ul>
+            <li>Amman- Jordan</li>
+            <li>Orange Coding Academy</li>
+            <li>Phone number: 00962786920278</li>
+          </ul>
+        </div>
+      </class>
+      <div>
+        <hr class="horizantal" />
+        <p>Copyrights 2021</p>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </footer>
+    <script src="javas.js"></script>
+  </body>
+</html>

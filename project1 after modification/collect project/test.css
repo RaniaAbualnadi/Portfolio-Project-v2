@@ -164,8 +164,7 @@ body {
 .testemonial-container {
   text-align: center;
   padding-bottom: 4em;
-  padding-top: 4rem;
-  margin-top: 5rem;
+  padding-top: 2rem;
 }
 
 .skills-container h1,
@@ -601,7 +600,6 @@ list-style: none; */
 }
 
 /* Responsive */
-/* Responsive */
 
 @media only screen and (max-width: 850px) {
   .background {
@@ -617,7 +615,7 @@ list-style: none; */
 
 @media only screen and (max-width: 770px) {
   .detailsflex {
-    grid-template-columns: auto;
+    flex-direction: column;
   }
   .lists {
     width: 60%;
@@ -697,4 +695,3 @@ list-style: none; */
     flex-direction: column;
   }
 }
-
